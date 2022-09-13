@@ -1,0 +1,210 @@
+html{
+   font-size: 62,5%;
+   background-color: #cecbc8;
+   font-family: 'Montserrat', sans-serif; ;
+}
+
+.imgFluid{
+	width: 100%;
+	height: auto;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+
+header{ 
+   position: 0;
+   top: 0;
+}
+
+.logoMonos{
+   width: 100px;
+   height: 100px;
+
+}
+.menuPrincipal{
+   background: linear-gradient(to left, gray, white);
+   border: solid;
+   display: flex;
+   justify-content: space space-around;
+}
+
+.menuPrincipal ul{
+   list-style-type: none;
+}
+.menuPrincipal ul li{
+   display: inline-block;
+   padding: 0px 20px;
+   grid-area: menu ;
+}
+
+.tituloContacto{
+    color:rgb(14, 16, 18)
+}
+
+.tituloProductos{
+   color:rgb(14, 16, 18)
+}
+
+.tituloNosotros{
+   color:rgb(14, 16, 18)
+   }
+
+.titulo__Clases {
+   color:rgb(14, 16, 18)
+}
+
+.tituloContacto{
+   padding: 40px;
+   margin: 0px 30px  
+}
+
+.tituloProductos{
+   padding: 40px;
+   margin: 0px 30px  
+}
+
+.tituloNosotros{
+   padding: 40px;
+   margin: 0px 30px  
+}
+
+.titulo__Clases {
+  padding: 40px;
+  margin: 0px 30px    
+}
+.redesFlotantes img { 
+   width: 50px;
+   grid-area: footer;
+}
+
+.flexGaleria{
+   background-color: #a5a5a4b7;
+   grid-area: galeria;
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-around
+}
+.foto1{
+   width: 300px;
+   height: 300px;
+   transition: height 3s;
+}
+
+.flexGaleria img:hover{
+   height: 400px;
+}
+
+.foto2{
+   width: 300px;
+   height: 300px;
+   transition: height 3s;
+}
+
+.foto3{
+   width: 300px;
+   height: 300px;
+   transition: height 3s;
+}
+
+.foto4{
+   width: 300px;
+   height: 300px;
+   transition: height 3s;
+}
+
+.cajaOverflow{
+   width: 500px;
+   height: 500px;
+   background-color: #7f7e7d;
+}
+
+.flexProductos{
+   background-color: #a5a5a4b7;
+   grid-area: galeria;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-evenly 
+}
+
+.foto-1{
+   width: 300px;
+   height: 300px;     
+}
+
+.foto-2{
+   width: 300px;
+   height: 300px;     
+}
+
+.foto-3{
+   width: 300px;
+   height: 300px;   
+}
+
+.flexNosotros{
+   background-color: #a5a5a4b7;
+   grid-area: galeria;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-evenly    
+}
+
+.flexNosotros{
+   width: 300px;
+   height: 300px;    
+}
+.contenedor{
+   width: 800px;
+   display: grid;
+   grid-template-columns: 500px, 500px;
+   grid-template-rows: 400px, 500px, 500px 
+   grid-template-areas
+   "menu menu"
+   "galeria galeria"
+   "footer footer"   
+}
+
+.contenedor-2{
+   width: 800px;
+   display: grid;
+   grid-template-columns: 500px, 500px;
+   grid-template-rows: 400px, 400px, 400px 
+   grid-template-areas
+   "menu menu"
+   "productos productos"
+   "footer footer"      
+}
+
+.contenedor-3{
+   width: 800px;
+   display: grid;
+   grid-template-columns: 500px, 500px;
+   grid-template-rows: 400px, 400px, 400px 
+   grid-template-areas
+   "menu menu"
+   "nosotros nosotros"
+   "footer footer"    
+}
+/*tablet 768px*/
+@media screen and (min-width:768px){
+   .contenedor{
+      grid-template-columns: repeat (3, 1fr);
+   }
+   .cajaOverflow{
+      background-color: rgb(110, 110, 110);
+      width: 600px;
+      height: 400px;
+   }
+
+
+}
+
+/*DESKTOP-1024PX*/
+@media screen and (min-width: 1024px){
+   .flexNosotros{
+      width: 600px;
+      height: 600px;   
+   }
+}
