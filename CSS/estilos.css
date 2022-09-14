@@ -24,7 +24,7 @@ header{
 
 }
 .menuPrincipal{
-   background: linear-gradient(to left, gray, white);
+   background-color: #cecbc8;
    border: solid;
    display: flex;
    justify-content: space space-around;
@@ -89,29 +89,25 @@ header{
 .foto1{
    width: 300px;
    height: 300px;
-   transition: height 3s;
-}
-
-.flexGaleria img:hover{
-   height: 400px;
+   
 }
 
 .foto2{
    width: 300px;
    height: 300px;
-   transition: height 3s;
+   
 }
 
 .foto3{
    width: 300px;
    height: 300px;
-   transition: height 3s;
+   
 }
 
 .foto4{
    width: 300px;
    height: 300px;
-   transition: height 3s;
+   
 }
 
 .cajaOverflow{
