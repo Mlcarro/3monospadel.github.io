@@ -11,6 +11,7 @@ html{
 
 body{
    font-family: 'Montserrat', sans-serif;
+   background-color:lightgray;
 }
 
 header{ 
@@ -18,25 +19,10 @@ header{
    top: 0;
 }
 
-.logoMonos{
-   width: 100px;
-   height: 100px;
+.logo{
+   width: 140px;
+   height: 140px;
 
-}
-.menuPrincipal{
-      background: linear-gradient(to left, gray, white);
-      border: solid;
-      display: flex;
-      justify-content: space space-around;
-}
-
-.menuPrincipal ul{
-   list-style-type: none;
-}
-.menuPrincipal ul li{
-   display: inline-block;
-   padding: 0px 20px;
-   grid-area: menu ;
 }
 
 .tituloContacto{
@@ -90,7 +76,7 @@ header{
 .flexGaleria img:hover{
    height: 400px;
 }
-.foto1{
+/* .foto1{
    width: 300px;
    height: 300px;
    transition: height 3s;
@@ -113,7 +99,7 @@ header{
    height: 300px;
    transition: height 3s;
 }
-
+ */
 .cajaOverflow{
    width: 500px;
    height: 500px;
