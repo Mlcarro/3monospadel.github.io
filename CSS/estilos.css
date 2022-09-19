@@ -60,9 +60,25 @@ header{
   padding: 40px;
   margin: 0px 30px    
 }
-.redesFlotantes img { 
-   width: 50px;
+.logoIg { 
+   width: 30px;
    grid-area: footer;
+}
+
+.whatsapp{
+   width: 30px;
+   grid-area: footer;   
+}
+
+.gmail{
+   width: 30px;
+   grid-area: footer;    
+}
+
+
+.logoFooter{
+   width: 100px;
+   height: 100px;
 }
 
 .flexGaleria{
@@ -73,36 +89,11 @@ header{
    justify-content: space-around
 }
 
-.flexGaleria img:hover{
-   height: 400px;
-}
-/* .foto1{
-   width: 300px;
-   height: 300px;
-   transition: height 3s;
-}
 
-.foto2{
-   width: 300px;
-   height: 300px;
-   transition: height 3s;
-}
 
-.foto3{
-   width: 300px;
-   height: 300px;
-   transition: height 3s;
-}
-
-.foto4{
-   width: 300px;
-   height: 300px;
-   transition: height 3s;
-}
- */
 .cajaOverflow{
-   width: 500px;
-   height: 500px;
+   width: 600px;
+   height: 600px;
    background-color: #7f7e7d;
 }
 
@@ -153,9 +144,9 @@ header{
 }
 
 .contenedor-2{
-   width: 800px;
-   display: grid;
-   grid-template-columns: 500px, 500px;
+   width: 1000px;
+   display: grid flex;
+   grid-template-columns: 500px, 500px, 500px;
    grid-template-rows: 400px, 400px, 400px 
    grid-template-areas
    "menu menu"
@@ -166,13 +157,24 @@ header{
 .contenedor-3{
    width: 800px;
    display: grid;
-   grid-template-columns: 500px, 500px;
-   grid-template-rows: 400px, 400px, 400px 
-   grid-template-areas
+   grid-template-columns: 200px, 200px;
+   grid-template-rows: 400px, 400px, 400px
    "menu menu"
    "nosotros nosotros"
    "footer footer"    
 }
+
+.contenedor-4{
+   width: 800px;
+   display: grid;
+   grid-template-columns: 500px, 500px;
+   grid-template-rows: 400px, 400px, 400px 
+     
+}  
+
+
+
+
 /*tablet 768px*/
 @media screen and (min-width:768px){
    .contenedor{
