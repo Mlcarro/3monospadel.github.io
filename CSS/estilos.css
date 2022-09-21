@@ -25,7 +25,6 @@ header{
 
 }
 
-
 .tituloContacto{
     color:rgb(14, 16, 18)
 }
@@ -43,23 +42,23 @@ header{
 }
 
 .tituloContacto{
-   padding: 40px;
-   margin: 0px 30px  
+   padding: 10px;
+   margin: 0px 10px
 }
 
 .tituloProductos{
-   padding: 40px;
-   margin: 0px 30px  
+   padding: 10px;
+   margin: 0px 10px 
 }
 
 .tituloNosotros{
-   padding: 40px;
-   margin: 0px 30px  
+   padding: 10px;
+   margin: 0px 10px  
 }
 
 .titulo__Clases {
-  padding: 40px;
-  margin: 0px 30px    
+   padding: 10px;
+   margin: 0px 10px  
 }
 .logoIg { 
    width: 30px;
@@ -76,7 +75,6 @@ header{
    grid-area: footer;    
 }
 
-
 .logoFooter{
    width: 100px;
    height: 100px;
@@ -89,8 +87,6 @@ header{
    flex-direction: row;
    justify-content: space-around
 }
-
-
 
 .cajaOverflow{
    width: 600px;
@@ -122,17 +118,35 @@ header{
 }
 
 .flexNosotros{
-   background-color: #a5a5a4b7;
+  
    grid-area: galeria;
    display: flex; 
-   flex-direction: column;
    justify-content: space-evenly    
 }
 
 .flexNosotros{
-   width: 300px;
-   height: 300px;    
+   width: 200px;
+   height: 200px; 
+   
 }
+
+.foto-nosotros{
+   display: flex;
+   padding: 100px;
+   margin: auto;
+   width: 700px;
+   height: 700px; 
+}
+
+.textoNosotros{
+   display: flex;
+   padding-left: 10%;
+   margin-top: 50px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+}
+
 .contenedor{
    width: 800px;
    display: grid;
@@ -147,7 +161,7 @@ header{
 .contenedor-2{
    width: 1000px;
    display: grid flex;
-   grid-template-columns: 500px, 500px, 500px;
+   grid-template-columns: 500px, 500px;
    grid-template-rows: 400px, 400px, 400px 
    grid-template-areas
    "menu menu"
@@ -156,10 +170,9 @@ header{
 }
 
 .contenedor-3{
-   width: 800px;
-   display: grid;
+   display: grid flex;
    grid-template-columns: 200px, 200px;
-   grid-template-rows: 400px, 400px, 400px
+   grid-template-rows: 400px, 400px, 400px      
    "menu menu"
    "nosotros nosotros"
    "footer footer"    
@@ -177,7 +190,7 @@ header{
 
 
 /*tablet 768px*/
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
    .contenedor{
       grid-template-columns: repeat (3, 1fr);
    }
@@ -187,13 +200,26 @@ header{
       height: 400px;
    }
 
-
-}
+   .contenedor-3{
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .container-fluid{
+      justify-content: end;
+      
+   }
+   
+  }
 
 /*DESKTOP-1024PX*/
 @media screen and (min-width: 1024px){
    .flexNosotros{
+      width: 700px;
+      height: 700px;   
+   }
+
+   .textoNosotros{
       width: 600px;
       height: 600px;   
    }
 }
+
