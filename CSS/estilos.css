@@ -25,6 +25,17 @@ header{
 
 }
 
+.carousel1{
+   width: 100vw;
+}
+
+.carousel2{
+   width: 100vw;
+}
+
+.carousel3{
+   width: 100vw;
+}
 .tituloContacto{
     color:rgb(14, 16, 18)
 }
@@ -130,12 +141,17 @@ header{
    
 }
 
-.foto-nosotros{
+.foto-nosotros {
    display: flex;
    padding: 100px;
    margin: auto;
    width: 700px;
    height: 700px; 
+   transition: width 3s;
+
+}
+.flexNosotros img:hover{
+   width: 850px;
 }
 
 .textoNosotros{
@@ -203,11 +219,7 @@ header{
    .contenedor-3{
       grid-template-columns: repeat(3, 1fr);
    }
-   .container-fluid{
-      justify-content: end;
-      
-   }
-   
+
   }
 
 /*DESKTOP-1024PX*/
