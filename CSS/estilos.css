@@ -1,4 +1,4 @@
-html{
+/* html{
    font-size: 62,5%;
    background-color: #cecbc8;
    font-family: 'Montserrat', sans-serif; ;
@@ -141,6 +141,10 @@ header{
    
 }
 
+.flexNosotros img:hover{
+   width: 850px;
+}
+
 .foto-nosotros {
    display: flex;
    padding: 100px;
@@ -148,10 +152,6 @@ header{
    width: 700px;
    height: 700px; 
    transition: width 3s;
-
-}
-.flexNosotros img:hover{
-   width: 850px;
 }
 
 .textoNosotros{
@@ -206,7 +206,7 @@ header{
 
 
 /*tablet 768px*/
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
    .contenedor{
       grid-template-columns: repeat (3, 1fr);
    }
@@ -220,10 +220,10 @@ header{
       grid-template-columns: repeat(3, 1fr);
    }
 
-  }
+  } */
 
 /*DESKTOP-1024PX*/
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){
    .flexNosotros{
       width: 700px;
       height: 700px;   
@@ -234,4 +234,5 @@ header{
       height: 600px;   
    }
 }
-
+ */
+ 

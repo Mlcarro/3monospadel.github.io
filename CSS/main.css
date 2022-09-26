@@ -1,0 +1,137 @@
+html {
+  font-size: 62,5%;
+  background-color: #cecbc8;
+  font-family: 'Montserrat', sans-serif; }
+
+.imgFluid {
+  width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightgray; }
+
+header {
+  position: 0;
+  top: 0; }
+
+.logo {
+  width: 140px;
+  height: 140px; }
+
+.carousel1 {
+  width: 100vw; }
+
+.carousel2 {
+  width: 100vw; }
+
+.carousel3 {
+  width: 100vw; }
+
+.logoIg {
+  width: 30px;
+  grid-area: footer; }
+
+.whatsapp {
+  width: 30px;
+  grid-area: footer; }
+
+.gmail {
+  width: 30px;
+  grid-area: footer; }
+
+.logoFooter {
+  width: 100px;
+  height: 100px; }
+
+.contenedorInicio {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 200px, 200px;
+  grid-template-rows: 200px, 300px, 200px  grid-template-areas "menu menu" "galeria galeria" "footer footer"; }
+
+.titulo__Clases {
+  padding: 10px;
+  margin: 0px 10px; }
+
+.titulo__Clases {
+  color: #0e1012; }
+
+.tituloProductos {
+  padding: 10px;
+  margin: 0px 10px; }
+
+.tituloProductos {
+  color: #0e1012; }
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+* {
+  font-family: 'Courier New', Courier, monospace; }
+
+.contenedorNosotros {
+  width: 100%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+.header_contenido {
+  position: relative;
+  z-index: 100; }
+
+.banner {
+  height: 50vh;
+  position: relative;
+  background: url(../CSS/Multimedia/fotocanchafinal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.bannerDescripcion {
+  position: absolute;
+  text-align: center;
+  color: black;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 25px; }
+
+.galeriaNosotros h1 {
+  font-size: 30px;
+  text-align: center; }
+
+.galeriaNosotros {
+  margin: 20px; }
+
+.tituloContacto {
+  padding: 10px;
+  margin: 0px 10px; }
+
+.tituloContacto {
+  color: #0e1012; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat 3, 1fr; } }
+
+@media (min-width: 520px) {
+  .banner h1 {
+    font-size: 30px; }
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (max-width: 1245px) and (min-width: 1024px) {
+  .contenedor {
+    width: 1000px; }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    justify-content: space-around; } }
