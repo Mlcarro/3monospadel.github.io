@@ -13,7 +13,7 @@
 
 /* GET-MAPA */
 .tituloContacto {
-  background-color: blue;
+  background-color:gray;
   font-size: 20px; }
 
 /* EXTEND */
@@ -83,7 +83,11 @@ header {
   height: 200px;
   display: grid;
   grid-template-columns: 200px, 200px;
-  grid-template-rows: 200px, 300px, 200px  grid-template-areas "menu menu" "galeria galeria" "footer footer"; }
+  grid-template-rows: 200px, 300px, 200px 
+ grid-template-areas
+ "menu menu"
+ "galeria galeria"
+ "footer footer"; }
 
 .titulo__Clases {
   padding: 10px;
