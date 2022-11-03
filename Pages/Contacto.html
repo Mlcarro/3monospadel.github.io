@@ -45,48 +45,69 @@
           </div>
         </div>
     </nav>
-    <hr>
+    
    <header>
    
     <h1 class="tituloContacto">CONTACTO</h1>
 
 	<!-- formulario de contacto -->
-	<section class="formulario">
-		<article>
-			<form action="#">
-				<input type="text" placeholder="NOMBRE Y APELLIDO"><br>
-				<label for="email">Email:
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-				<label for="Observaciones"> Observaciones:<br>
-					<textarea placeholder="Observaciones"></textarea>
-				</label> <br>
-				<input type="number" placeholder="DECIME TU EDAD"><br>
-				<div><p>Sos profesional o amateur?:</p>
-					<div>Profesional
-						<input type="radio" name="lado" value="izquierda">
-					</div>
-					<div>Amateur
-						<input type="radio" name="lado" value="amateur">
-					</div>
-				</div>
-				<p>Tu genero?</p>
-				<select name="letra" id="letra"> 
-					<option value="f">X</option>
-					<option value="M">Y</option>
-					<option value="X">Z</option>
-				</select>
-				<div>Queres que te enviemos info sobre nosotros?
-				<input type="checkbox" name="ACEPTA" value="1"></div>
-				<input type="submit" value="ENVIAME INFO">
-				<input type="reset" value="VOLVER A EMPEZAR">
-			</form>
-		</article>
-	</section>
+  <main> 
+  <form action="#">
+      <div class="field">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="nombre" required placeholder="Nombre">
+      </div>
+
+      <div class="field">
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="apellido" required placeholder="Apellido">
+      </div>
+
+      <div class="field">
+        <label for="nivelexperiencia">Nivel de Experiencia</label>
+        <select name="opciones" id="opc">
+          <option selected disabled value="seleccione una opcion">Seleccione una opción</option>
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="email" required placeholder="Email">
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono</label>
+        <input type="number" name="telefono" required placeholder="Teléfono">
+      </div>
+    
+      <div class="textbox">
+        <label for="observaciones">Observaciones</label>
+        <textarea name="box" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="infoclases">
+        <label for="info">Querés recibir información de nuestras clases?</label>
+        <div><input type="radio" name="info">Si</div>
+        <div><input type="radio" name="info">No</div>
+      </div>
+
+      <div class="privacidad">
+        <input type="checkbox" required>
+        <label for="heleido">He leído y acepto la política de privacidad</label>
+      </div>
+    </form>
+  </main>  
+<hr>
+	
+  
+  </header>
     
    
     <p class="dondeEstamos">Donde estamos?</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1091963135127!2d-58.49277328481386!3d-34.60140018046003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb126687f5ad7%3A0xb77f8bc4b9932597!2sSquare%20Padel!5e0!3m2!1ses-419!2sar!4v1661725777793!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1091963135127!2d-58.49277328481386!3d-34.60140018046003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb126687f5ad7%3A0xb77f8bc4b9932597!2sSquare%20Padel!5e0!3m2!1ses-419!2sar!4v1661725777793!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
     <footer>
